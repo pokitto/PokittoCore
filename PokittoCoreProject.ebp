@@ -3,11 +3,11 @@
 	<EmBitzVersion release="0.42" revision="0" />
 	<FileVersion major="1" minor="0" />
 	<Project>
-		<Option title="PokittoCoreProject" />
+		<Option title="Project" />
 		<Option pch_mode="2" />
 		<Option compiler="armgcc_eb" />
 		<Build>
-			<Target title="BaseTarget">
+			<Target title="Project">
 				<Option output=".\build\$(TARGET_NAME).elf" />
 				<Option type="0" />
 				<Option create_hex="1" />
@@ -35,6 +35,7 @@
 					<Add option="-DMBED_RTOS_SINGLE_THREAD" />
 					<Add option="-include" />
 					<Add option="mbed_config.h" />
+					<Add directory=".\$(TARGET_NAME)" />
 				</Compiler>
 				<Cpp>
 					<Add option="-fno-exceptions" />
@@ -75,7 +76,7 @@
 				</Linker>
 				<ExtraCommands>
 					<Add after="arm-none-eabi-objcopy.exe -I ihex .\build\$(TARGET_OUTPUT_BASENAME).hex -O binary .\build\$(TARGET_OUTPUT_BASENAME).bin" />
-					<Add after=".\build\lpcrc .\build\$(TARGET_OUTPUT_BASENAME).bin" />
+					<Add after=".\lpcrc .\build\$(TARGET_OUTPUT_BASENAME).bin" />
 					<Mode before="0" />
 					<Mode after="1" />
 				</ExtraCommands>
@@ -584,146 +585,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Pokitto\POKITTO_HW\timer_11u6x.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\ImageFormat\defines_linux_SIM.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\ImageFormat\defines_win_SIM.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\ImageFormat\ImageFormat.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\frozen_mpy.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\genhdr\qstrdefs.generated.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\genhdr\qstrdefs.preprocessed.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\main.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\mpconfigport.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\My_settings.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmarm.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmbase.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmthumb.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmx64.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmx86.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\asmxtensa.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\bc.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\bc0.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\binary.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\builtin.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\compile.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\emit.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\emitglue.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\formatfloat.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\frozenmod.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\gc.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\grammar.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\lexer.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\misc.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mpconfig.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mperrno.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mphal.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mpprint.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mpstate.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mpthread.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\mpz.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\nlr.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\obj.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objarray.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objexcept.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objfun.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objgenerator.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objint.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objlist.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objmodule.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objstr.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objstringio.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objtuple.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\objtype.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\parse.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\parsenum.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\parsenumbase.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\persistentcode.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\qstr.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\qstrdefs.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\reader.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\repl.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\ringbuf.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\runtime.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\runtime0.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\scope.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\smallint.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\stackctrl.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\stream.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\unicode.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\py\vmentrytable.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\PythonBindings.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\PythonBindings.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\MicroPython\UsbSerialPrint.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Body.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Body.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Clock.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Clock.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Collision.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Collision.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\IEMath.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Manifold.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Manifold.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Physics.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Scene.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Scene.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\Physics\Shape.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\CRC16.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\CRC16.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\CRC7.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\CRC7.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\ccsbcs.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\diskio.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\diskio.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\ff.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\ff.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\ffconf.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN\integer.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATDirHandle.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATDirHandle.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATFileHandle.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATFileHandle.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATFileSystem.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\FATFileSystem.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\MemFileSystem.h" />
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\SDFileSystem.cpp">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Pokitto\POKITTO_LIBS\SDFileSystem\SDFileSystem.h" />
 		<Unit filename="Pokitto\POKITTO_LIBS\Synth\Synth.cpp">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -836,7 +697,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger>
-				<target_debugging_settings target="BaseTarget" active_interface="J-link">
+				<target_debugging_settings target="Project" active_interface="J-link">
 					<debug_interface interface_id="Generic" ip_address="" ip_port="" path="" executable="" description="LPC11U6x.svd" dont_start_server="false" backoff_time="" options="0" reg_filter="0" active_family="All">
 						<family_options family_id="All" />
 					</debug_interface>
