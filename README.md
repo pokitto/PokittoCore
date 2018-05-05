@@ -1,5 +1,7 @@
-# PokittoLib
+# PokittoCore - just the core of PokittoLib
 
-Library for making programs on Pokitto hardware
+PokittoLib is a library for making programs on Pokitto hardware
 
-Intended to be used with EmBitz IDE. You can also (or should also) be able to import this library from Github to mbed online IDE
+PokittoCore is just the core files needed to compile programs on mbed online compiler and on EmBitz offline
+
+# This is currently work in progress and untested
