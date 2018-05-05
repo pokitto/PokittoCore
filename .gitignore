@@ -3,7 +3,6 @@
 *.usbeecomp
 *.o
 *.i
-*.s
 *.d
 *.mpg
 *.layout
