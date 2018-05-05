@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>PokittoCoreProject build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>05-05-2018 at 09:14.24</u><br />
+Build ended on: <u>05-05-2018 at 09:14.26</u><p />
+<b>-------------- Build: BaseTarget in PokittoCoreProject ---------------</b><br />
+arm-none-eabi-g++.exe -mcpu=cortex-m0plus     -O3 -fno-exceptions -fno-rtti -std=gnu++11 -Wextra -Wall -fomit-frame-pointer -fdata-sections -ffunction-sections -Os -g -funsigned-char -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-builtin -fno-delete-null-pointer-checks -DMBED_RTOS_SINGLE_THREAD -Wvla -include mbed_config.h  -DTARGET_LPC11U68 -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -DTARGET_LIKE_MBED -DTARGET_NXP -D__MBED_CMSIS_RTOS_CM -DDEVICE_RTC=1 -DTOOLCHAIN_object -D__CMSIS_RTOS -DTOOLCHAIN_GCC -DTARGET_CORTEX_M -DTARGET_M0P -DTARGET_UVISOR_UNSUPPORTED -DDEVICE_SERIAL=1 -DDEVICE_INTERRUPTIN=1 -DTARGET_LPCTarget -DTARGET_CORTEX -DDEVICE_I2C=1 -D__CORTEX_M0PLUS -DTARGET_FF_ARDUINO -DTARGET_RELEASE -DMBED_BUILD_TIMESTAMP=1507563655.72 -DARM_MATH_CM0PLUS -DTARGET_LPC11U6X -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DDEVICE_SPI=1 -DDEVICE_ANALOGIN=1 -DDEVICE_PWMOUT=1 -DTARGET_LIKE_CORTEX_M0  -c Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp -o .objs\pokitto\pokitto_libs\imageformat\bmpimage.o -MMD -I. -IPokitto -IPokitto\POKITTO_CORE -IPokitto\POKITTO_CORE\FONTS -IPokitto\POKITTO_CORE\PALETTES -IPokitto\POKITTO_HW -IPokitto\POKITTO_LIBS -IPokitto\POKITTO_LIBS\Synth -IPokitto\libpff -IPokitto\mbed-pokitto -IPokitto\mbed-pokitto\api -IPokitto\mbed-pokitto\common -IPokitto\mbed-pokitto\hal -IPokitto\mbed-pokitto\targets -IPokitto\mbed-pokitto\targets\cmsis -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM\TARGET_LPC11U68 -IPokitto\mbed-pokitto\targets\cmsis\TOOLCHAIN_GCC -IPokitto\mbed-pokitto\targets\hal -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\libpff -I.\Pokitto\mbed-pokitto\api -I.\Pokitto\mbed-pokitto\hal -I.\Pokitto\mbed-pokitto\targets\cmsis -I.\Pokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto -I.\Pokitto\POKITTO_CORE -I.\Pokitto\POKITTO_HW -I.\Pokitto\POKITTO_LIBS\ImageFormat -I.\Pokitto\POKITTO_LIBS\MicroPython\genhdr -I.\Pokitto\POKITTO_LIBS\MicroPython -I.\Pokitto\POKITTO_LIBS\MicroPython\py -I.\Pokitto\POKITTO_LIBS\Physics -I.\Pokitto\POKITTO_LIBS\SDFileSystem -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem -I.\Pokitto\POKITTO_LIBS\Synth -I.\Pokitto\POKITTO_LIBS\USBDevice\USBAudio -I.\Pokitto\POKITTO_LIBS\USBDevice\USBDevice -I.\Pokitto\POKITTO_LIBS\USBDevice\USBHID -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMIDI -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMSD -I.\Pokitto\POKITTO_LIBS\USBDevice\USBSerial -I.\Project -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi\include" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\lib\cmsis\include"<br />
+arm-none-eabi-gcc.exe -mcpu=cortex-m0plus     -O3 -fno-exceptions -std=gnu99 -Wextra -Wall -fomit-frame-pointer -fdata-sections -ffunction-sections -Os -g -funsigned-char -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-builtin -fno-delete-null-pointer-checks -DMBED_RTOS_SINGLE_THREAD -include mbed_config.h  -DTARGET_LPC11U68 -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -DTARGET_LIKE_MBED -DTARGET_NXP -D__MBED_CMSIS_RTOS_CM -DDEVICE_RTC=1 -DTOOLCHAIN_object -D__CMSIS_RTOS -DTOOLCHAIN_GCC -DTARGET_CORTEX_M -DTARGET_M0P -DTARGET_UVISOR_UNSUPPORTED -DDEVICE_SERIAL=1 -DDEVICE_INTERRUPTIN=1 -DTARGET_LPCTarget -DTARGET_CORTEX -DDEVICE_I2C=1 -D__CORTEX_M0PLUS -DTARGET_FF_ARDUINO -DTARGET_RELEASE -DMBED_BUILD_TIMESTAMP=1507563655.72 -DARM_MATH_CM0PLUS -DTARGET_LPC11U6X -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DDEVICE_SPI=1 -DDEVICE_ANALOGIN=1 -DDEVICE_PWMOUT=1 -DTARGET_LIKE_CORTEX_M0  -c Pokitto\POKITTO_LIBS\MicroPython\frozen_mpy.c -o .objs\pokitto\pokitto_libs\micropython\frozen_mpy.o -MMD -I. -IPokitto -IPokitto\POKITTO_CORE -IPokitto\POKITTO_CORE\FONTS -IPokitto\POKITTO_CORE\PALETTES -IPokitto\POKITTO_HW -IPokitto\POKITTO_LIBS -IPokitto\POKITTO_LIBS\Synth -IPokitto\libpff -IPokitto\mbed-pokitto -IPokitto\mbed-pokitto\api -IPokitto\mbed-pokitto\common -IPokitto\mbed-pokitto\hal -IPokitto\mbed-pokitto\targets -IPokitto\mbed-pokitto\targets\cmsis -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM\TARGET_LPC11U68 -IPokitto\mbed-pokitto\targets\cmsis\TOOLCHAIN_GCC -IPokitto\mbed-pokitto\targets\hal -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\libpff -I.\Pokitto\mbed-pokitto\api -I.\Pokitto\mbed-pokitto\hal -I.\Pokitto\mbed-pokitto\targets\cmsis -I.\Pokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto -I.\Pokitto\POKITTO_CORE -I.\Pokitto\POKITTO_HW -I.\Pokitto\POKITTO_LIBS\ImageFormat -I.\Pokitto\POKITTO_LIBS\MicroPython\genhdr -I.\Pokitto\POKITTO_LIBS\MicroPython -I.\Pokitto\POKITTO_LIBS\MicroPython\py -I.\Pokitto\POKITTO_LIBS\Physics -I.\Pokitto\POKITTO_LIBS\SDFileSystem -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem -I.\Pokitto\POKITTO_LIBS\Synth -I.\Pokitto\POKITTO_LIBS\USBDevice\USBAudio -I.\Pokitto\POKITTO_LIBS\USBDevice\USBDevice -I.\Pokitto\POKITTO_LIBS\USBDevice\USBHID -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMIDI -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMSD -I.\Pokitto\POKITTO_LIBS\USBDevice\USBSerial -I.\Project -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi\include" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\lib\cmsis\include"<br />
+arm-none-eabi-g++.exe -mcpu=cortex-m0plus     -O3 -fno-exceptions -fno-rtti -std=gnu++11 -Wextra -Wall -fomit-frame-pointer -fdata-sections -ffunction-sections -Os -g -funsigned-char -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-builtin -fno-delete-null-pointer-checks -DMBED_RTOS_SINGLE_THREAD -Wvla -include mbed_config.h  -DTARGET_LPC11U68 -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -DTARGET_LIKE_MBED -DTARGET_NXP -D__MBED_CMSIS_RTOS_CM -DDEVICE_RTC=1 -DTOOLCHAIN_object -D__CMSIS_RTOS -DTOOLCHAIN_GCC -DTARGET_CORTEX_M -DTARGET_M0P -DTARGET_UVISOR_UNSUPPORTED -DDEVICE_SERIAL=1 -DDEVICE_INTERRUPTIN=1 -DTARGET_LPCTarget -DTARGET_CORTEX -DDEVICE_I2C=1 -D__CORTEX_M0PLUS -DTARGET_FF_ARDUINO -DTARGET_RELEASE -DMBED_BUILD_TIMESTAMP=1507563655.72 -DARM_MATH_CM0PLUS -DTARGET_LPC11U6X -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DDEVICE_SPI=1 -DDEVICE_ANALOGIN=1 -DDEVICE_PWMOUT=1 -DTARGET_LIKE_CORTEX_M0  -c Pokitto\POKITTO_LIBS\MicroPython\main.cpp -o .objs\pokitto\pokitto_libs\micropython\main.o -MMD -I. -IPokitto -IPokitto\POKITTO_CORE -IPokitto\POKITTO_CORE\FONTS -IPokitto\POKITTO_CORE\PALETTES -IPokitto\POKITTO_HW -IPokitto\POKITTO_LIBS -IPokitto\POKITTO_LIBS\Synth -IPokitto\libpff -IPokitto\mbed-pokitto -IPokitto\mbed-pokitto\api -IPokitto\mbed-pokitto\common -IPokitto\mbed-pokitto\hal -IPokitto\mbed-pokitto\targets -IPokitto\mbed-pokitto\targets\cmsis -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM\TARGET_LPC11U68 -IPokitto\mbed-pokitto\targets\cmsis\TOOLCHAIN_GCC -IPokitto\mbed-pokitto\targets\hal -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\libpff -I.\Pokitto\mbed-pokitto\api -I.\Pokitto\mbed-pokitto\hal -I.\Pokitto\mbed-pokitto\targets\cmsis -I.\Pokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto -I.\Pokitto\POKITTO_CORE -I.\Pokitto\POKITTO_HW -I.\Pokitto\POKITTO_LIBS\ImageFormat -I.\Pokitto\POKITTO_LIBS\MicroPython\genhdr -I.\Pokitto\POKITTO_LIBS\MicroPython -I.\Pokitto\POKITTO_LIBS\MicroPython\py -I.\Pokitto\POKITTO_LIBS\Physics -I.\Pokitto\POKITTO_LIBS\SDFileSystem -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem -I.\Pokitto\POKITTO_LIBS\Synth -I.\Pokitto\POKITTO_LIBS\USBDevice\USBAudio -I.\Pokitto\POKITTO_LIBS\USBDevice\USBDevice -I.\Pokitto\POKITTO_LIBS\USBDevice\USBHID -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMIDI -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMSD -I.\Pokitto\POKITTO_LIBS\USBDevice\USBSerial -I.\Project -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi\include" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\lib\cmsis\include"<br />
+arm-none-eabi-g++.exe -mcpu=cortex-m0plus     -O3 -fno-exceptions -fno-rtti -std=gnu++11 -Wextra -Wall -fomit-frame-pointer -fdata-sections -ffunction-sections -Os -g -funsigned-char -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-builtin -fno-delete-null-pointer-checks -DMBED_RTOS_SINGLE_THREAD -Wvla -include mbed_config.h  -DTARGET_LPC11U68 -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -DTARGET_LIKE_MBED -DTARGET_NXP -D__MBED_CMSIS_RTOS_CM -DDEVICE_RTC=1 -DTOOLCHAIN_object -D__CMSIS_RTOS -DTOOLCHAIN_GCC -DTARGET_CORTEX_M -DTARGET_M0P -DTARGET_UVISOR_UNSUPPORTED -DDEVICE_SERIAL=1 -DDEVICE_INTERRUPTIN=1 -DTARGET_LPCTarget -DTARGET_CORTEX -DDEVICE_I2C=1 -D__CORTEX_M0PLUS -DTARGET_FF_ARDUINO -DTARGET_RELEASE -DMBED_BUILD_TIMESTAMP=1507563655.72 -DARM_MATH_CM0PLUS -DTARGET_LPC11U6X -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DDEVICE_SPI=1 -DDEVICE_ANALOGIN=1 -DDEVICE_PWMOUT=1 -DTARGET_LIKE_CORTEX_M0  -c Pokitto\POKITTO_LIBS\MicroPython\PythonBindings.cpp -o .objs\pokitto\pokitto_libs\micropython\pythonbindings.o -MMD -I. -IPokitto -IPokitto\POKITTO_CORE -IPokitto\POKITTO_CORE\FONTS -IPokitto\POKITTO_CORE\PALETTES -IPokitto\POKITTO_HW -IPokitto\POKITTO_LIBS -IPokitto\POKITTO_LIBS\Synth -IPokitto\libpff -IPokitto\mbed-pokitto -IPokitto\mbed-pokitto\api -IPokitto\mbed-pokitto\common -IPokitto\mbed-pokitto\hal -IPokitto\mbed-pokitto\targets -IPokitto\mbed-pokitto\targets\cmsis -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM -IPokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X\TOOLCHAIN_GCC_ARM\TARGET_LPC11U68 -IPokitto\mbed-pokitto\targets\cmsis\TOOLCHAIN_GCC -IPokitto\mbed-pokitto\targets\hal -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP -IPokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\libpff -I.\Pokitto\mbed-pokitto\api -I.\Pokitto\mbed-pokitto\hal -I.\Pokitto\mbed-pokitto\targets\cmsis -I.\Pokitto\mbed-pokitto\targets\cmsis\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto\mbed-pokitto\targets\hal\TARGET_NXP\TARGET_LPC11U6X -I.\Pokitto -I.\Pokitto\POKITTO_CORE -I.\Pokitto\POKITTO_HW -I.\Pokitto\POKITTO_LIBS\ImageFormat -I.\Pokitto\POKITTO_LIBS\MicroPython\genhdr -I.\Pokitto\POKITTO_LIBS\MicroPython -I.\Pokitto\POKITTO_LIBS\MicroPython\py -I.\Pokitto\POKITTO_LIBS\Physics -I.\Pokitto\POKITTO_LIBS\SDFileSystem -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem\ChaN -I.\Pokitto\POKITTO_LIBS\SDFileSystem\FATFileSystem -I.\Pokitto\POKITTO_LIBS\Synth -I.\Pokitto\POKITTO_LIBS\USBDevice\USBAudio -I.\Pokitto\POKITTO_LIBS\USBDevice\USBDevice -I.\Pokitto\POKITTO_LIBS\USBDevice\USBHID -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMIDI -I.\Pokitto\POKITTO_LIBS\USBDevice\USBMSD -I.\Pokitto\POKITTO_LIBS\USBDevice\USBSerial -I.\Project -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi\include" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\arm-none-eabi" -I"C:\Program Files (x86)\EmBitz\0.42\share\em_armgcc\bin\..\lib\cmsis\include"<br />
+In file included from Pokitto/Pokitto.h:50:0,<br />
+                 from Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:45:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:42:30: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]</font><br />
+     operator const uint8_t() const       { return **this; }<br />
+                              ^<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:91:26: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]</font><br />
+     operator const int() const          { return index; }<br />
+                          ^<br />
+Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp: In function 'int openImageFileFromSD(char*, uint16_t**, uint8_t**)':<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:66:5: error: 'BITMAPFILEHEADER' was not declared in this scope</font><br />
+     BITMAPFILEHEADER bf;<br />
+     ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:66:22: error: expected ';' before 'bf'</font><br />
+     BITMAPFILEHEADER bf;<br />
+                      ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:67:5: error: 'BITMAPINFO' was not declared in this scope</font><br />
+     BITMAPINFO bmi;<br />
+     ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:67:16: error: expected ';' before 'bmi'</font><br />
+     BITMAPINFO bmi;<br />
+                ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:86:46: error: 'bf' was not declared in this scope</font><br />
+     if (fileOK() && fileReadBytes((uint8_t*)&bf, sizeof(bf)) == sizeof(bf) ) {<br />
+                                              ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:96:34: error: 'bmi' was not declared in this scope</font><br />
+     if (fileReadBytes((uint8_t*)&bmi,sizeof(bmi.bmiHeader)) != sizeof(bmi.bmiHeader)) {<br />
+                                  ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:101:26: error: 'bmi' was not declared in this scope</font><br />
+In file included from Pokitto/Pokitto.h:50:0,<br />
+                 from Pokitto\POKITTO_LIBS\MicroPython\main.cpp:37:<br />
+In file included from Pokitto\POKITTO_CORE/PokittoGlobs.h:48:0,<br />
+                 from Pokitto\POKITTO_CORE/PokittoDisplay.h:73,<br />
+                 from Pokitto\POKITTO_CORE/PokittoCore.h:57,<br />
+                 from Pokitto\POKITTO_LIBS\MicroPython\PythonBindings.cpp:37:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/HWLCD.h:153:13: warning: 'void Pokitto::setup_gpio()' defined but not used [-Wunused-function]</font><br />
+ static void setup_gpio()<br />
+             ^<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:42:30: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]</font><br />
+     operator const uint8_t() const       { return **this; }<br />
+                              ^<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:91:26: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]</font><br />
+     operator const int() const          { return index; }<br />
+                          ^<br />
+In file included from Pokitto/Pokitto.h:50:0,<br />
+                 from Pokitto\POKITTO_LIBS\MicroPython\main.cpp:37:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:144:20: warning: 'EEPROM' defined but not used [-Wunused-variable]</font><br />
+ static EEPROMClass EEPROM;<br />
+                    ^<br />
+In file included from Pokitto\POKITTO_CORE/PokittoGlobs.h:48:0,<br />
+                 from Pokitto\POKITTO_CORE/PokittoDisplay.h:73,<br />
+                 from Pokitto\POKITTO_CORE/PokittoCore.h:57,<br />
+                 from Pokitto/Pokitto.h:41,<br />
+                 from Pokitto\POKITTO_LIBS\MicroPython\main.cpp:37:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/HWLCD.h:153:13: warning: 'void Pokitto::setup_gpio()' defined but not used [-Wunused-function]</font><br />
+ static void setup_gpio()<br />
+             ^<br />
+     bytes_read += sizeof(bmi.bmiHeader);<br />
+                          ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:105:9: error: 'bf' was not declared in this scope</font><br />
+     if (bf.bfType != 0x4D42) {<br />
+         ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:140:42: error: 'BI_RLE4' was not declared in this scope</font><br />
+         !(bmi.bmiHeader.biCompression == BI_RLE4 && bmi.bmiHeader.biBitCount == 4))<br />
+                                          ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:171:22: error: 'bf' was not declared in this scope</font><br />
+     fileSeekAbsolute(bf.bfOffBits-c*4); //gfx data star minus color table<br />
+                      ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:175:9: error: 'RGBQUAD' was not declared in this scope</font><br />
+         RGBQUAD rgbValue;<br />
+         ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:175:17: error: expected ';' before 'rgbValue'</font><br />
+         RGBQUAD rgbValue;<br />
+                 ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:176:34: error: 'rgbValue' was not declared in this scope</font><br />
+         fileReadBytes((uint8_t*)&rgbValue, sizeof(RGBQUAD));<br />
+                                  ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:192:37: error: 'BI_RLE4' was not declared in this scope</font><br />
+  if (bmi.bmiHeader.biCompression == BI_RLE4)<br />
+                                     ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:212:38: error: 'BI_RLE4' was not declared in this scope</font><br />
+   if (bmi.bmiHeader.biCompression == BI_RLE4) {<br />
+                                      ^<br />
+<font color="#0000ff">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:235:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]</font><br />
+                 for (int i=0; i<outindex;i++)<br />
+                                 ^<br />
+Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp: In function 'int directDrawImageFileFromSD(uint16_t, uint16_t, uint16_t, uint16_t, int16_t, int16_t, char*)':<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:307:5: error: 'BITMAPFILEHEADER' was not declared in this scope</font><br />
+     BITMAPFILEHEADER bf;<br />
+     ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:307:22: error: expected ';' before 'bf'</font><br />
+     BITMAPFILEHEADER bf;<br />
+                      ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:308:5: error: 'BITMAPINFO' was not declared in this scope</font><br />
+     BITMAPINFO bmi;<br />
+     ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:308:16: error: expected ';' before 'bmi'</font><br />
+     BITMAPINFO bmi;<br />
+                ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:321:46: error: 'bf' was not declared in this scope</font><br />
+     if (fileOK() && fileReadBytes((uint8_t*)&bf, sizeof(bf)) == sizeof(bf) ) {  //!HV why we have to check fileOK()?<br />
+                                              ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:331:34: error: 'bmi' was not declared in this scope</font><br />
+     if (fileReadBytes((uint8_t*)&bmi,sizeof(bmi.bmiHeader)) != sizeof(bmi.bmiHeader)) {<br />
+                                  ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:336:26: error: 'bmi' was not declared in this scope</font><br />
+     bytes_read += sizeof(bmi.bmiHeader);<br />
+                          ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:340:9: error: 'bf' was not declared in this scope</font><br />
+     if (bf.bfType != 0x4D42) {<br />
+         ^<br />
+<font color="#ff0000">Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:432:19: error: 'bf' was not declared in this scope</font><br />
+  fileSeekAbsolute(bf.bfOffBits);<br />
+                   ^<br />
+In file included from Pokitto/Pokitto.h:50:0,<br />
+                 from Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:45:<br />
+Pokitto\POKITTO_HW/PokittoEEPROM.h: At global scope:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/PokittoEEPROM.h:144:20: warning: 'EEPROM' defined but not used [-Wunused-variable]</font><br />
+ static EEPROMClass EEPROM;<br />
+                    ^<br />
+In file included from Pokitto\POKITTO_CORE/PokittoGlobs.h:48:0,<br />
+                 from Pokitto\POKITTO_CORE/PokittoDisplay.h:73,<br />
+                 from Pokitto\POKITTO_CORE/PokittoCore.h:57,<br />
+                 from Pokitto/Pokitto.h:41,<br />
+                 from Pokitto\POKITTO_LIBS\ImageFormat\BmpImage.cpp:45:<br />
+<font color="#0000ff">Pokitto\POKITTO_HW/HWLCD.h:153:13: warning: 'void Pokitto::setup_gpio()' defined but not used [-Wunused-function]</font><br />
+ static void setup_gpio()<br />
+             ^<br />
+<font color="#a00000">Process terminated with status 1 (0 minutes, 2 seconds)</font><br />
+<font color="#a00000">24 errors, 10 warnings (0 minutes, 2 seconds)</font><br />
+</tt>
+</body>
+</html>

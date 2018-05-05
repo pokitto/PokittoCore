@@ -1,11 +1,12 @@
-/* SD/MMC File System Library
- * Copyright (c) 2014 Neil Thiessen
+/*
+ * mbed SDK
+ * Copyright (c) 2017 ARM Limited
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,11 +15,11 @@
  * limitations under the License.
  */
 
-#ifndef CRC16_H
-#define CRC16_H
+// Automatically generated configuration file.
+// DO NOT EDIT, content will be overwritten.
 
-#include "mbed.h"
+#ifndef __MBED_CONFIG_DATA__
+#define __MBED_CONFIG_DATA__
 
-unsigned short CRC16(const char* data, int length);
 
 #endif
